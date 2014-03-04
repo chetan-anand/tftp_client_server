@@ -1,17 +1,17 @@
 /**********************************************************
-Date: 		OCT 28th, 2006
-Project :	NET4900 Project: tftpd.c TFTP Server
+Date: 		FEB 10, 2014
+Project :	CS 349 Project
 
-Programers:	
-Craig Holmes
-Reza Rahmanian 
+Author:
+Chetan Anand
+Roll No: 11010117
 
 
 File:		TFTP Server (main)
 Purpose:	A TFTP server that will accept a connections from
-		a client and transefet files.
+			a client and transefet files.
 Notes:		Here we are using the sendto and recvfrom
-		functions so the server and client can exchange data.
+			functions so the server and client can exchange data.
 ***********************************************************************/
 
 /* Include our header which contains libaries and defines */
@@ -27,7 +27,7 @@ void usage (void);
 
 /* default values which can be controlled by command line */
 int debug = 0;
-char path[64] = "/tmp/";
+char path[64] = "/home/";
 int port = 69;
 unsigned short int ackfreq = 1;
 int datasize = 512;
@@ -827,6 +827,6 @@ void
 usage (void)			/* prints program usage */
 {
   printf
-    ("Usage: tftpd [options] [path]\nOptions:\n-d (debug mode)\n-h (help; this message)\n-P <port>\n-a <ack freqency. Default 1>\n-s <data chunk size in bytes. Default 512>\n");
+    ("Usage: tftpd [options] [path]\nOptions:\n-p (specify file path mode)\n-d (debug mode)\n-h (help; this message)\n-P <port>\n-a <ack freqency. Default 1>\n-s <data chunk size in bytes. Default 512>\n");
   return;
 }

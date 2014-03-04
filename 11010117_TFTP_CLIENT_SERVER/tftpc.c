@@ -1,17 +1,16 @@
 /**********************************************************
-Date: 		NOV 28th, 2006
-Project :	TFTP Client
-Programers:	
-Jonathan Felske
-Andrew Fullard 
-Craig Holmes
-Reza Rahmanian 
-Adam Tomalty 
+Date: 		FEB 10, 2014
+Project :	CS 349 Project
+
+Author:
+Chetan Anand
+Roll No: 11010117
+
 File:		TFTP Client (main)
 Purpose:	A TFTP client that will request a connections from
-		the server and transefet files.
+			the server and transefet files.
 Notes:		Here we are using the sendto and recvfrom
-		functions so the server and client can exchange data.
+			functions so the server and client can exchange data.
 ***********************************************************/
 
 #include "tftp.h"
@@ -170,7 +169,7 @@ main (int argc, char **argv)
     }				//end of while loop
 
 /*check for valid input*/
-  if (argc < 5 || argc > 12)
+  if (argc < 4 || argc > 12)
     {
       printf ("Client: wrong number of arguments: %d\n", argc);
       help (argv[0]);

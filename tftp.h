@@ -1,10 +1,14 @@
 /**********************************************************
-Date: 		OCT 28, 2006
-Project :	TFTP Server
-Programer:	Reza Rahmanian, Craig Holmes
+Date: 		FEB 10, 2014
+Project :	TFTP client server
+
+Author:
+Chetan Anand
+Roll No: 11010117
+
 File:		Header Files
 Purpose:	This file contains all the needed header files 
-		for the implementation of the TFTP client and servers.
+			for the implementation of the TFTP client.
 ***********************************************************/
 
 #include <stdio.h>		/*for input and output */
